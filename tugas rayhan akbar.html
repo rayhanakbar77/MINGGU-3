@@ -1,0 +1,40 @@
+<html>
+<body>
+
+<div style="textx-align:center">
+    <button obclick="playpause()">play/pause</button>
+    <button onclick="makebig()">Big</button>
+    <button onclick="makeSmall()">Small</button>
+    <button onclick="makeNormal()">Naormal</button>
+    <br><br>
+        <video id="video1" width="420" controls>
+        <source src="y2mate.com - Andra And The Backbone  Sempurna Official Music Video_480p (1).mp4" type="video/mp4">
+    <track src="[Indonesian] Andra And The Backbone - Sempurna (Official Music Video) [DownSub.com].vtt" kind="subtitles" srclang="id" label="indonesia">
+    </video>
+</div>
+
+<script>
+    var myVideo = document.getElementId("video1");
+
+    function playpause() {
+        if (myVideo.paused)
+            myVideo.play();
+        else
+         myVideo.pause();
+    }
+
+    function makeBig() {
+        myVideo.width = 500;
+    }
+
+    function makeSmall() {
+        myVideo.width = 320;
+    }
+
+    function makenormal() {
+        myVideo.width = 420;
+    }
+    </script>
+
+    </body>
+    </html>
